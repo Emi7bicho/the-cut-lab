@@ -1,0 +1,18 @@
+{
+  "name": "The Cut Lab",
+  "short_name": "The Cut Lab",
+  "description": "Recomendador de cortes y reservas de The Cut Lab.",
+  "start_url": "/the-cut-lab/",
+  "scope": "/the-cut-lab/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
