@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cut Lab | Barbería</title>
+    <meta
+      name="description"
+      content="The Cut Lab: descubre qué corte te queda mejor según tu estilo, rostro y nivel de mantenimiento. Reserva desde tu celular."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">TCL</div>
+          <div>
+            <p class="brand-name">The Cut Lab</p>
+            <span class="brand-tag">Barbería premium</span>
+          </div>
+        </div>
+        <a class="cta-mini" href="https://wa.me/5218110742345?text=Hola%20The%20Cut%20Lab%2C%20quiero%20reservar%20mi%20cita." target="_blank" rel="noreferrer">
+          Reservar
+        </a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">Estilo. Mantenimiento. Precisión.</span>
+            <h1>Encuentra tu corte ideal antes de sentarte en la silla.</h1>
+            <p>
+              Diseñado para que cada cliente responda unas pocas preguntas y reciba un corte recomendado
+a la medida de su rostro, cabello y estilo personal.
+            </p>
+            <div class="hero-actions">
+              <button class="primary" data-scroll="recommender">Descubre tu corte</button>
+              <a class="secondary" href="https://wa.me/5218110742345?text=Hola%20The%20Cut%20Lab%2C%20quiero%20hacer%20mi%20reserva." target="_blank" rel="noreferrer">
+                Reserva por WhatsApp
+              </a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>+500</strong><span>clientes</span></li>
+              <li><strong>12</strong><span>estilos</span></li>
+              <li><strong>MXN</strong><span>precios claros</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-glow"></div>
+            <div class="mini-panel">
+              <p class="panel-label">Corte sugerido</p>
+              <h3>Fade moderno</h3>
+              <div class="chip-row">
+                <span>Cabello medio</span>
+                <span>Rostro ovalado</span>
+              </div>
+              <div class="mini-price-row">
+                <span>Desde</span>
+                <strong>$350 MXN</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="feature-card">
+            <span class="icon">01</span>
+            <h3>Diagnóstico rápido</h3>
+            <p>Responde 5 preguntas y recibe una recomendación sin complicarte.</p>
+          </div>
+          <div class="feature-card">
+            <span class="icon">02</span>
+            <h3>Recomendación visual</h3>
+            <p>Te mostramos el corte más apropiado según tu cara, estilo y mantenimiento.</p>
+          </div>
+          <div class="feature-card">
+            <span class="icon">03</span>
+            <h3>Reserva inmediata</h3>
+            <p>Te llevamos directo al WhatsApp para agendar tu cita sin fricción.</p>
+          </div>
+        </section>
+
+        <section id="recommender" class="recommender-wrap">
+          <div class="section-heading">
+            <span class="eyebrow dark">Recomendador</span>
+            <h2>¿Qué estilo te queda mejor?</h2>
+          </div>
+
+          <div class="recommender-grid">
+            <form id="recommendationForm" class="form-panel">
+              <div class="field-group">
+                <label for="faceShape">Forma de rostro</label>
+                <select id="faceShape">
+                  <option value="oval">Ovalado</option>
+                  <option value="round">Redondo</option>
+                  <option value="square">Cuadrado</option>
+                  <option value="diamond">Diamante</option>
+                  <option value="long">Alargado</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="hairTexture">Textura del cabello</label>
+                <select id="hairTexture">
+                  <option value="straight">Liso</option>
+                  <option value="wavy">Ondulado</option>
+                  <option value="curly">Rizado</option>
+                  <option value="thick">Grueso</option>
+                  <option value="fine">Fino</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="hairLength">Longitud que buscas</label>
+                <select id="hairLength">
+                  <option value="short">Corto</option>
+                  <option value="mid">Medio</option>
+                  <option value="long">Largo</option>
+                  <option value="textured">Texturizado</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="maintenance">Nivel de mantenimiento</label>
+                <select id="maintenance">
+                  <option value="low">Poco mantenimiento</option>
+                  <option value="medium">Mantenimiento medio</option>
+                  <option value="high">Más cuidado y estilo</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="styleGoal">Qué buscas</label>
+                <select id="styleGoal">
+                  <option value="clean">Limpio / profesional</option>
+                  <option value="modern">Moderno / trendy</option>
+                  <option value="masculine">Más masculino / contundente</option>
+                  <option value="soft">Suave / natural</option>
+                  <option value="bold">Audaz / standout</option>
+                </select>
+              </div>
+
+              <div class="field-group full-width">
+                <label for="prompt">Describe tu estilo o tu look ideal</label>
+                <textarea id="prompt" rows="4" placeholder="Ejemplo: Tengo el rostro redondo, cabello grueso y quiero algo moderno pero fácil de mantener."></textarea>
+              </div>
+
+              <div class="action-row">
+                <button type="submit" class="primary">Ver mi recomendación</button>
+                <button type="button" id="randomBtn" class="ghost">Aleatorio</button>
+              </div>
+            </form>
+
+            <aside class="result-panel" id="resultPanel">
+              <div class="result-header">
+                <span class="mini-badge">Resultado</span>
+                <button id="shareBtn" class="share-btn" type="button">Compartir</button>
+              </div>
+              <div id="resultContent" class="result-content">
+                <h3>Corte ideal: Fade moderno</h3>
+                <p>Te queda perfecto si buscas una apariencia limpia, fresca y con un toque elegante.</p>
+                <ul>
+                  <li>Rostro: ovalado o cuadrado</li>
+                  <li>Mantenimiento: medio</li>
+                  <li>Estilo: moderno y sobrio</li>
+                </ul>
+              </div>
+              <div class="result-actions">
+                <a id="waBtn" class="primary full" href="https://wa.me/5218110742345?text=Hola%20The%20Cut%20Lab%2C%20quiero%20reservar%20el%20corte%20recomendado." target="_blank" rel="noreferrer">
+                  Reservar este corte
+                </a>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="styles-section">
+          <div class="section-heading">
+            <span class="eyebrow dark">Catálogo</span>
+            <h2>Estilos que más pedimos</h2>
+          </div>
+
+          <div class="catalog-grid">
+            <article class="style-card">
+              <div class="style-visual visual-one"></div>
+              <div class="style-body">
+                <h3>Fade bajo</h3>
+                <p>Minimalista, limpio y clásico para un look sobrio.</p>
+                <span>Desde $300 MXN</span>
+              </div>
+            </article>
+
+            <article class="style-card">
+              <div class="style-visual visual-two"></div>
+              <div class="style-body">
+                <h3>Crop texturizado</h3>
+                <p>Perfecto si quieres modernidad con poco esfuerzo diario.</p>
+                <span>Desde $350 MXN</span>
+              </div>
+            </article>
+
+            <article class="style-card">
+              <div class="style-visual visual-three"></div>
+              <div class="style-body">
+                <h3>Pompadour</h3>
+                <p>Más volumen, actitud y estilo para eventos o días especiales.</p>
+                <span>Desde $420 MXN</span>
+              </div>
+            </article>
+
+            <article class="style-card">
+              <div class="style-visual visual-four"></div>
+              <div class="style-body">
+                <h3>Curly taper</h3>
+                <p>Ideal para cabellos rizados con control y forma.</p>
+                <span>Desde $380 MXN</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="booking-banner">
+          <div>
+            <span class="eyebrow">La mejor decisión es la que te queda bien</span>
+            <h2>Hazlo con The Cut Lab.</h2>
+          </div>
+          <a class="primary" href="https://wa.me/5218110742345?text=Hola%20The%20Cut%20Lab%2C%20quiero%20agendar%20mi%20cita." target="_blank" rel="noreferrer">
+            Agendar cita
+          </a>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
