@@ -1,7 +1,7 @@
 {
-  "name": "The Cut Lab",
-  "short_name": "The Cut Lab",
-  "description": "Recomendador de cortes y reservas de The Cut Lab.",
+  "name": "Vértice Barbería",
+  "short_name": "Vértice",
+  "description": "Recomendador de cortes y reservas de Vértice Barbería.",
   "start_url": "/the-cut-lab/",
   "scope": "/the-cut-lab/",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "theme_color": "#0a0a0a",
   "icons": [
     {
-      "src": "favicon.svg",
+      "src": "favicon.svg?v=2",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

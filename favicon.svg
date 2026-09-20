@@ -1,10 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="The Cut Lab">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Vértice Barbería">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#292929"/><stop offset="1" stop-color="#0b0b0b"/></linearGradient>
-    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#a1a1aa"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.52" stop-color="#c7c9cc"/>
+      <stop offset="1" stop-color="#85898e"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#282d30"/>
+      <stop offset="1" stop-color="#0d0f10"/>
+    </linearGradient>
   </defs>
   <rect width="128" height="128" rx="30" fill="url(#bg)"/>
-  <rect x="4" y="4" width="120" height="120" rx="27" fill="none" stroke="#525252" stroke-width="3"/>
-  <path d="M29 35h70M29 64h70M29 93h70" stroke="#3f3f46" stroke-width="3" stroke-linecap="round"/>
-  <text x="64" y="77" fill="url(#silver)" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="-2">TCL</text>
+  <path d="M64 12 112 38 64 116 16 38 64 12Z" fill="none" stroke="url(#silver)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M64 12v104M16 38l48 78M112 38 64 116M16 38l48 28 48-28M40 51l24 43 24-43" fill="none" stroke="url(#silver)" stroke-width="4" stroke-linejoin="round"/>
 </svg>
